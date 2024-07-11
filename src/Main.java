@@ -15,10 +15,10 @@ public class Main {
 
         System.out.println(MessageConstants.WELCOME_MESSAGE);
 
+
         Scanner sc = new Scanner(System.in);
 
-        Veiculo veiculo = new Veiculo();
-        veiculo.setRenavam();
+//        teste
 
         System.out.println("Digite uma opacao para acessar o sistema" +
                 "\n 1) Cadastrar funcionario" +
