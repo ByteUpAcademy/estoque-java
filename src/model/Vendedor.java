@@ -26,7 +26,12 @@ public class Vendedor extends Funcionario {
     }
 
     public void vender(double valorDoCarro) {
-         this.comissao = valorDoCarro * 0.05;
+        if(valorDoCarro <= 0.0) {
+            System.out.println("O valor informado do carro esta invalido");
+        } else {
+            this.comissao = valorDoCarro * 0.05;
+        }
+
     }
 
     @Override

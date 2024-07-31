@@ -13,7 +13,6 @@ public class Veiculo {
     private String placa;
 
 
-
     private int numeroPassageiro;
 
     private double potencia;
