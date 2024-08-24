@@ -23,6 +23,8 @@ public class DatabaseConfig {
         } catch (SQLException e) {
             e.printStackTrace();
             throw new SQLException(e);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
         }
     }
 

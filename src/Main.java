@@ -29,21 +29,22 @@ public class Main {
 
 
             if (MenuConstants.CADASTRAR_FUNCIONARIO == codigo) {
+
                 Funcionario funcionario = new Funcionario();
                 System.out.println("Digite o nome do funcionario: ");
                 funcionario.setNome(sc.nextLine());
 
+
+
+
             } else if (MenuConstants.REALIZAR_VENDA == codigo) {
                 Locale ptBr = new Locale("pt", "BR");
-
                 Vendedor vendedor = new Vendedor();
                 sc.nextLine();
                 System.out.println("Qual o nome do vendedor: ");
                 vendedor.setNome(sc.nextLine());
-
                 System.out.println("Qual o valor da venda ? ");
                 vendedor.vender(sc.nextDouble());
-
                 String comissaoConvertida = NumberFormat.getCurrencyInstance(ptBr).format(vendedor.getComissao());
                 System.out.println(comissaoConvertida);
             } else if (MenuConstants.CONSULTAR_CARROS == codigo) {

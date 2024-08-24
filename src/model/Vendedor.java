@@ -10,12 +10,10 @@ public class Vendedor extends Funcionario {
 
     }
 
-    public Vendedor(String nome, String cargo, double salario, String cpf, Date dataDeNascimento, double comissao) {
-        super(nome, cargo, salario, cpf, dataDeNascimento);
+    public Vendedor(Long id, String nome, String sobrenome, String sexo, String cargo, double salario, String cpf, Date dataDeNascimento, double comissao) {
+        super(id, nome, sobrenome, sexo, cargo, salario, cpf, dataDeNascimento);
         this.comissao = comissao;
     }
-
-
 
     public double getComissao() {
         return comissao;
@@ -34,8 +32,5 @@ public class Vendedor extends Funcionario {
 
     }
 
-    @Override
-    public void almocar() {
-        System.out.println("O vendedor esta almocando...");
-    }
+
 }
